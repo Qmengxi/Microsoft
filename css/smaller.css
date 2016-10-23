@@ -1,0 +1,27 @@
+/*header*/
+section{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+}
+header a:nth-child(1){
+	flex-basis: 80%;
+}
+	/*nav*/
+header nav{
+	display: none;
+}
+		/*search*/
+header form{
+	border:none;
+}
+header form input{
+	width:233px;
+	display: none;
+}
+header a:nth-child(5){
+	display: block;
+}
+header a:nth-child(6){
+	display: none;
+}
