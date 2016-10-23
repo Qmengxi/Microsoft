@@ -6,5 +6,40 @@ header nav{
 	flex-flow: row nowrap;
 	height:48px;
 	line-height: 48px;
-
 }
+/*banner*/
+.banner{
+	position: relative;
+}
+section:nth-child(2){
+	width:100%;
+}
+.banner div:nth-of-type(2){
+	display: none;
+}
+.banner img{
+	width:150%;
+	margin-left: -50%;
+}
+.banner article{
+	height:280px;
+	width:100%;
+	text-align: center;
+	line-height: 280px;
+	background: #999;
+	top:100%;
+	left: 0%;
+	animation: none;
+}
+.banner article p{
+	position: absolute;
+	left:45%;
+	animation: name 2s linear;
+}
+@keyframes name{
+		from{left:55%}
+		to{
+			left:45%
+		}
+		animation-play-state:paused;
+	}
