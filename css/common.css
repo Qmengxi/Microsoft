@@ -1,4 +1,4 @@
-html,body,header,section,footer,figure,div,img,form,input,button,ul,ol,li{
+html,body,header,section,footer,figure,div,img,form,input,button,ul,ol,li,p{
 	margin:0;
 	padding: 0;
 }
@@ -209,7 +209,7 @@ footer{
 }
 footer section:first-child{
 	display:flex;
-	justify-content: start;
+	justify-content: flex-start;
 	flex-flow: row;
 	color:#626262;
 }
@@ -229,4 +229,31 @@ footer section:first-child ul li:first-child{
 }
 footer .iconfont{
 	display: none;
+	color: #ccc;
+}
+footer section:nth-child(2){
+	display: flex;
+	justify-content:flex-end!important;
+	margin-top:10px;
+}
+footer section:nth-child(2) p{
+	flex: 1 1 22%;
+}
+footer section:nth-child(2) ul{
+	flex:1 1 60%;
+	display: block;
+	margin: 0;
+}
+footer section:nth-child(2) ul li{
+	display: inline-block;
+	margin:0 0 0 10px;
+	text-align: right;
+}
+footer section:nth-child(2) ul li a{
+	color: #ccc;
+}
+footer section:nth-child(3) p{
+	color: #ccc;
+	text-align: right;
+	margin:10px 0;
 }

@@ -2,7 +2,6 @@ $(function(){
 	var timer=setInterval(move,5000);
 	var i=0;
 	function move(){
-		console.log(1)
 		i++;
 		if(i==3){
 			i=1;
@@ -22,7 +21,21 @@ $(function(){
 		console.log(2)
 		timer=setInterval(move,5000);
 	})
-	$("footer").find("li:nth-of-type(1)").on("click",function(){
-		$(this).siblings().slideToggle();
-	})
+	
+//	if(document.body.clientWidth<=550){
+		$("footer").find("li:nth-of-type(1)").on("click",function(){
+			$(this).siblings().slideToggle();
+		})
+//	}
+
+//	window.onresize=function(){
+//		
+//		if(document.body.clientWidth<=550){
+//			$("footer").find("li:nth-of-type(1)").on("click",function(){
+//				$(this).siblings().slideToggle();
+//			})
+//		}
+//	}
+
+
 })
