@@ -1,4 +1,4 @@
-html,body,header,section,footer,figure,div,img,form,input,button{
+html,body,header,section,footer,figure,div,img,form,input,button,ul,ol,li{
 	margin:0;
 	padding: 0;
 }
@@ -15,6 +15,9 @@ a{
 img{
 	border:0;
 	display: block;
+}
+ul,ol,li{
+	list-style: none;
 }
 /*common*/
 header{
@@ -115,11 +118,13 @@ form .iconfont,header a:nth-child(4) i,header a:nth-child(5) i{
 	position: relative;
 }
 .banner div{
-	position: absolute;
+	position: relative;
 	top:0;
 	left:0;
 }
 .banner div:nth-of-type(2){
+	top:-100%;
+	left:0;
 	display: none;
 }
 .banner img{
@@ -169,5 +174,59 @@ form .iconfont,header a:nth-child(4) i,header a:nth-child(5) i{
 	left:50%;
 }
 .imgs{
+	position: relative;
+}
+.imgs img{
 	width:100%;
+}
+.imgs article{
+	position: absolute;
+	left:10%;
+	top:20%;
+}
+section ul{
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row;
+	margin-top:50px;
+}
+section ul li{
+	flex:0 1 23%;
+}
+section ul li img{
+	width:100%;
+}
+h3{
+	width:100%;
+	height: 56px;
+	margin:44px 0;
+	text-align: center;
+	font-size: 36px;
+}
+footer{
+	background: #f1f1f1;
+}
+footer section:first-child{
+	display:flex;
+	justify-content: start;
+	flex-flow: row;
+	color:#626262;
+}
+footer section:first-child ul{
+	margin-top:30px;
+	display:flex;
+	justify-content: flex-start;
+	flex-flow: column ;
+	flex: 0 0 15%;
+}
+footer section:first-child ul li{
+	height:22px;
+	line-height: 22px;
+}
+footer section:first-child ul li:first-child{
+	margin-top:10px;
+}
+footer .iconfont{
+	display: none;
 }

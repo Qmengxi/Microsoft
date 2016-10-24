@@ -1,9 +1,14 @@
 $(function(){
 	var timer=setInterval(move,5000);
+	var i=0;
 	function move(){
 		console.log(1)
-		$(".banner div").stop().fadeToggle("fast");
-		$(".banner div article p").css({"animation": "name 2s linear"})
+		i++;
+		if(i==3){
+			i=1;
+		}
+		$(".banner div:nth-child("+i+")").css({"display":"none"}).siblings().css({"display":"block"})
+//		$(".banner div").stop().fadeToggle("fast");
 	}
 	$(".banner").mouseenter(function(){
 		console.log(1)
@@ -16,5 +21,8 @@ $(function(){
 	$(".banner").mouseleave(function(){
 		console.log(2)
 		timer=setInterval(move,5000);
+	})
+	$("footer").find("li:nth-of-type(1)").on("click",function(){
+		$(this).siblings().slideToggle();
 	})
 })
