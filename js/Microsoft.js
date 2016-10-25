@@ -28,14 +28,13 @@ $(function(){
 		})
 //	}
 
-//	window.onresize=function(){
-//		
-//		if(document.body.clientWidth<=550){
-//			$("footer").find("li:nth-of-type(1)").on("click",function(){
-//				$(this).siblings().slideToggle();
-//			})
-//		}
-//	}
+	window.onresize=function(){		
+		if(document.body.clientWidth<=550){
+			$("footer").find("li:nth-of-type(1)").on("click",function(){
+				$(this).siblings().stop().slideToggle();
+			})
+		}
+	}
 
 
 })
